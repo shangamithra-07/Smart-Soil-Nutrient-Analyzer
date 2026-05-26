@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Soil Nutrient Analyzer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🌱 Smart Soil Nutrient Analyzer</h1>
+    <p>Analyze Soil Health & Get Crop Recommendations</p>
+</header>
+
+<div class="container">
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h3>Soil Health</h3>
+            <p id="health">--</p>
+        </div>
+
+        <div class="card">
+            <h3>Recommended Crop</h3>
+            <p id="crop">--</p>
+        </div>
+
+        <div class="card">
+            <h3>Fertilizer Need</h3>
+            <p id="fertilizer">--</p>
+        </div>
+
+    </div>
+
+    <div class="main">
+
+        <div class="panel">
+
+            <h2>Enter Soil Values</h2>
+
+            <label>Nitrogen (N)</label>
+            <input type="number" id="nitrogen">
+
+            <label>Phosphorus (P)</label>
+            <input type="number" id="phosphorus">
+
+            <label>Potassium (K)</label>
+            <input type="number" id="potassium">
+
+            <label>Soil pH</label>
+            <input type="number" step="0.1" id="ph">
+
+            <label>Moisture (%)</label>
+            <input type="number" id="moisture">
+
+            <button onclick="analyzeSoil()">
+                Analyze Soil
+            </button>
+
+        </div>
+
+        <div class="panel">
+
+            <h2>Analysis Report</h2>
+
+            <div id="report" class="report">
+                Enter soil details and click Analyze.
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
